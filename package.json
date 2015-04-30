@@ -1,0 +1,25 @@
+{
+  "name": "komponents",
+  "version": "1.0.0",
+  "description": "KnockoutJS-based web-components with BootStrap",
+  "main": "release/komponents.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SergioMorchon/komponents.git"
+  },
+  "keywords": [
+    "knockout",
+    "web",
+    "component",
+    "bootstrap"
+  ],
+  "author": "Sergio Morchón Poveda",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/SergioMorchon/komponents/issues"
+  },
+  "homepage": "https://github.com/SergioMorchon/komponents"
+}
