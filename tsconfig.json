@@ -5,7 +5,9 @@
 		"emitBOM": false,
 		"removeComments": false,
 		"target": "ES3",
-		"sourceMap": false
+		"sourceMap": false,
+		"outDir": "release",
+		"out": "komponents.js"
 	},
 	"files": [
 		"src/**/*.ts"
