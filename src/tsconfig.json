@@ -6,10 +6,6 @@
 		"removeComments": false,
 		"target": "ES3",
 		"sourceMap": false,
-		"outDir": "release",
-		"out": "komponents.js"
-	},
-	"files": [
-		"src/**/*.ts"
-	]
+		"out": "../release/komponents.js"
+	}
 }
