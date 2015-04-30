@@ -1,4 +1,4 @@
-module Komponent {
+module Komponents {
 	
 	function getPathValue<T>(root: any, path: string) {
         return (new Function("$context", `with($context){return ${path}}`))(root);
