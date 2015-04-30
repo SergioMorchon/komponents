@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"charset": "utf-8",
+		"declaration": true,
+		"emitBOM": false,
+		"removeComments": false,
+		"target": "ES3",
+		"sourceMap": false
+	},
+	"files": [
+		"src/**/*.ts"
+	]
+}
