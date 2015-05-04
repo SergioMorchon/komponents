@@ -26,7 +26,7 @@ module Komponents {
 			return result;
 		}
 
-		static register(alias: string, ViewModel: typeof Abstract, template: string) {
+		static register(alias: string, ViewModel: typeof Base, template: string) {
 			let registration = <KnockoutComponentTypes.Config>{};
 
 			registration.template = template || " ";
