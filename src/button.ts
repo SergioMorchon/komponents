@@ -4,6 +4,8 @@ module Komponents {
 	
 	export class Button extends Base {
 		
+		click: Function;
+		
 		type: KnockoutObservable<Button.Type>;
 		size: KnockoutObservable<Button.Size>;
 		
@@ -101,8 +103,11 @@ module Komponents {
 			} else {
 				this.block = ko.observable(false);
 			}
+			this.click = parameters["click"];
 		}
 	}
+	
+	Button.register("button", Button, "<button data-bind='click: click, disable: !enabled(), css: css()'></button>");
 	
 	export module Button {
 		export enum Type {
