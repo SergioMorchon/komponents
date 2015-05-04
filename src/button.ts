@@ -39,9 +39,26 @@ module Komponents {
 			result.push(`btn-${type}`);
 			//#endregion
 			//#region size
-			
+			let size: string;
+			switch (this.size()) {
+				case Button.Size.ExtraSmall:
+					size = "xs";
+					break;
+				case Button.Size.Small:
+					size = "sm";
+					break;
+				case Button.Size.Large:
+					size = "lg";
+					break;
+			}
+			if (size) {
+				result.push(`btn-${size}`);
+			}
 			//#endregion size
 			//#region block
+			if (this.block()) {
+				result.push("btn-block");
+			}
 			//#endregion
 			
 			return result.join(" ");
