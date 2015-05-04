@@ -1,5 +1,9 @@
 module Komponents.Utils {
 	
+	export function isDefined(value: any, key: string): boolean {
+		return Object.prototype.hasOwnProperty.call(value, key);
+	}
+	
 	export function keys(value: any) {
 		let keys = <string[]>[];
 		for (var key in value) {
