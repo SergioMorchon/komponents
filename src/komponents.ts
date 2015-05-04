@@ -4,7 +4,7 @@ module Komponents {
         return (new Function("$context", `with($context){return ${path}}`))(root);
 	}
 
-	export class Abstract {
+	export class Base {
 
 		constructor(params: any, info: KnockoutComponentTypes.ComponentInfo) {
 		}
