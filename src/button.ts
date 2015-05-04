@@ -6,6 +6,8 @@ module Komponents {
 		
 		click: Function;
 		
+		enabled: KnockoutObservable<boolean>;
+		
 		type: KnockoutObservable<Button.Type>;
 		size: KnockoutObservable<Button.Size>;
 		
@@ -69,6 +71,16 @@ module Komponents {
 		constructor(params: any, info: KnockoutComponentTypes.ComponentInfo) {
 			super(params, info);
 			let parameters = Button.parameters(info);
+			if (Utils.isDefined(parameters, "enabled")) {
+				this.enabled = <KnockoutObservable<boolean>>(
+					ko.isObservable(parameters["enabled"])?
+						parameters["enabled"]
+						:
+						ko.observable(parameters["enabled"])
+					);
+			} else {
+				this.enabled = ko.observable(true);
+			}
 			if (Utils.isDefined(parameters, "type")) {
 				this.type = <KnockoutObservable<Button.Type>>(
 					ko.isObservable(parameters["type"])?
